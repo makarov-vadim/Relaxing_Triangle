@@ -1,0 +1,38 @@
+# Окно приложения
+<Container>:
+    orientation: 'vertical'
+    padding: 5
+    spacing: 10
+
+
+    # Текстовое поле
+    MessageWidget:
+        id: message_widget
+        size_hint: (1, 0.33)
+
+
+    # Поле обратного отсчета
+    TimerWidget:
+        id: timer_widget
+        size_hint: (1, 0.10)
+
+
+    AnchorLayout:
+        anchor_x: 'center'
+        anchor_y: 'center'
+        size_hint: (1, 0.47)
+
+        # Поле графического окна
+        GraphicWidget:
+            id: graphic_widget
+            message_widget: message_widget
+            timer_widget: timer_widget
+
+
+    # Поле управления скоростью
+    SpeedControl:
+        id: speed_control
+        size_hint: (1, 0.10)
+
+        timer_widget: timer_widget
+        graphic_widget: graphic_widget
