@@ -1,13 +1,14 @@
 from kivy.clock import Clock
 from kivy.lang import Builder
 from kivy.properties import NumericProperty, StringProperty
-from kivy.uix.label import Label
+
+from widgets.font_scale_label import FontScaleLabel
 
 
 Builder.load_file("widgets/timer_widget/timer_widget.kv")
 
 
-class TimerWidget(Label):
+class TimerWidget(FontScaleLabel):
     start_time = NumericProperty(120)
     current_time = NumericProperty(120)
     time_text = StringProperty()
