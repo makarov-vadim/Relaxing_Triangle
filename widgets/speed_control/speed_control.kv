@@ -1,20 +1,26 @@
 # Поле управления скоростью
 <SpeedControl>:
     spacing: 3
+    speed_label: speed_label
+    minus_button: minus_button
+    plus_button: plus_button
 
-    Button:
+    FontScaleButton:
+        id: minus_button
         text: '-'
-        font_size: 20
+        font_scale: 0.5
         size_hint: (0.25, 1)
         on_press: self.parent.speed_down()
 
-    Label:
+    FontScaleLabel:
+        id: speed_label
         text: 'Скорость'
-        font_size: 20
+        font_scale: 0.5
         size_hint: (0.50, 1)
 
-    Button:
+    FontScaleButton:
+        id: plus_button
         text: '+'
-        font_size: 20
+        font_scale: 0.5
         size_hint: (0.25, 1)
         on_press: self.parent.speed_up()

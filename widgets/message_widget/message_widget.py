@@ -1,12 +1,15 @@
 from kivy.clock import Clock
 from kivy.lang import Builder
 from kivy.properties import ObjectProperty, StringProperty
-from kivy.uix.label import Label
+
+from widgets.font_scale_label import FontScaleLabel
+
 
 Builder.load_file("widgets/message_widget/message_widget.kv")
 
 
-class MessageWidget(Label):
+class MessageWidget(FontScaleLabel):
+    """Виджет, отображающий сообщения пользователю"""
     HELLO = StringProperty("Привет, сначала выбери скорость, а потом нажми на треугольник!")
     RELAX = StringProperty("Расслабься и наблюдай")
     FINISH = StringProperty("Посмотри, как красиво!\nМожешь нажать на треугольник, чтобы начать заново.")

@@ -15,6 +15,7 @@ Builder.load_file("widgets/graphic_widget/graphic_widget.kv")
 
 
 class GraphicWidget(Widget):
+    """Виджет графического окна построения анимации"""
     message_widget : MessageWidget = ObjectProperty()
     timer_widget : TimerWidget = ObjectProperty()
 
