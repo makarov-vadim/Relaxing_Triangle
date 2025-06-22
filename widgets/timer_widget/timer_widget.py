@@ -9,6 +9,7 @@ Builder.load_file("widgets/timer_widget/timer_widget.kv")
 
 
 class TimerWidget(FontScaleLabel):
+    """Виджет обратного отсчета времени до завершения построения анимации"""
     start_time = NumericProperty(120)
     current_time = NumericProperty(120)
     time_text = StringProperty()

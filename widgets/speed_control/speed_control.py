@@ -10,6 +10,7 @@ from widgets.font_scale_button import FontScaleButton
 Builder.load_file("widgets/speed_control/speed_control.kv")
 
 class SpeedControl(BoxLayout):
+    """Виджет выбора скорости анимации с помощью клавиш «-» и «+»"""
     timer_widget: TimerWidget = ObjectProperty()
     graphic_widget: GraphicWidget = ObjectProperty()
 

@@ -9,6 +9,7 @@ Builder.load_file("widgets/message_widget/message_widget.kv")
 
 
 class MessageWidget(FontScaleLabel):
+    """Виджет, отображающий сообщения пользователю"""
     HELLO = StringProperty("Привет, сначала выбери скорость, а потом нажми на треугольник!")
     RELAX = StringProperty("Расслабься и наблюдай")
     FINISH = StringProperty("Посмотри, как красиво!\nМожешь нажать на треугольник, чтобы начать заново.")
