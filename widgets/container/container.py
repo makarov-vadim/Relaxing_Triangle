@@ -10,6 +10,7 @@ from widgets.timer_widget.timer_widget import TimerWidget
 Builder.load_file("widgets/container/container.kv")
 
 class Container(BoxLayout):
+    """Основное окно приложения"""
     message_widget: MessageWidget = ObjectProperty()
     timer_widget: TimerWidget = ObjectProperty()
     graphic_widget: GraphicWidget = ObjectProperty()
